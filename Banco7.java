@@ -9,7 +9,7 @@ public class Banco7 {
 
         // Registrar transacciones
         Transaccion7 t1 = depositar(ana, 2000);
-        Transaccion7 t2 = retirar(ana, 8000);
+        Transaccion7 t2 = retirar(ana, 1000);
         if(t2 == null)
             System.out.println("No se pudo realizar el retiro por fondos insuficientes.");
         Transaccion7 t3 = retirar(luis, 3000);
