@@ -37,7 +37,7 @@ public class Archivos14 {
         Path rutaArchivo = rutaDirectorio.resolve(nombreArchivo);
 
         try {
-            // Crea el directorio (y todos los intermedios si es necesario)
+            // Escribir en el archivo
             Files.writeString(rutaArchivo, factura.generarReporte());
             System.out.println("Factura guardada con éxito, en: " + rutaArchivo);
         } catch (IOException e) {
@@ -79,3 +79,4 @@ public class Archivos14 {
         }
     }
 }
+
