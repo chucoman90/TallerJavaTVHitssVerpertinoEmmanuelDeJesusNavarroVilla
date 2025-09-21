@@ -45,7 +45,7 @@ public class TestMainVuelo15 {
                 .parseCaseInsensitive()  // ignora mayúsculas/minúsculas
                 .parseLenient()          // más flexible para abreviaturas, no considera posibles errores menores
                 .appendPattern("EEE dd MMM yyyy")
-                .toFormatter(new Locale("es", "ES"));
+                .toFormatter(Locale.of("es", "MX"));
         DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
 
         try {
@@ -84,3 +84,4 @@ public class TestMainVuelo15 {
 
 
 }
+
