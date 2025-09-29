@@ -1,0 +1,18 @@
+package ejercicios.ejercicio18;
+
+public class main {
+    
+    public static void main(String[] args) {
+        ITransformador transformador = cadena ->
+            cadena.replaceAll("[ ,.]", "").toUpperCase();
+
+        String cadena = "Hola, mundo. Bienvenido al tema programacion funcional.";
+
+        System.out.println(transformador.transformar(cadena));
+    }
+    
+    
+    
+
+    
+}
