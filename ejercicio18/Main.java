@@ -32,7 +32,7 @@ public class Main {
         uni.agregarCurso(cursoBaseDatos);
         uni.agregarCurso(cursoCalculoVectorial);
 
-        //Cursos de alta  for (Map.Entry<String, Integer> palabra : conteoPalabra.entrySet())
+        //Cursos de alta
         System.out.println("\nCursos activos en el sistema:\n");
         for (Map.Entry<String,Curso> curso : uni.getCursos().entrySet()) {
             System.out.println(curso.getValue());
@@ -91,5 +91,6 @@ public class Main {
         }
     }
 }
+
 
 
